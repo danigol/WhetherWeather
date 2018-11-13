@@ -8,13 +8,13 @@ import android.support.v7.widget.RecyclerView
 class MainActivity : AppCompatActivity() {
 
     private val items = listOf(
-            "Mon 11/12 - Partly Cloudy - 50/42",
-            "Tue 11/13 - Cloudy - 49/39",
-            "Wed 11/14 - Partly Sunny - 51/42",
-            "Thu 11/15 - Partly Cloudy - 49/42",
-            "Fri 11/16 - Partly Sunny - 55/39",
-            "Sat 11/17 - Sunny - 60/49",
-            "Sun 11/18 - Rain - 50/37"
+        WeatherDay("Mon", R.drawable.ic_sunny, "Sunny", "65/59"),
+        WeatherDay("Tue", R.drawable.ic_sunny, "Sunny", "64/57"),
+        WeatherDay("Wed", R.drawable.ic_cloudy, "Cloudy", "64/57"),
+        WeatherDay("Thu", R.drawable.ic_cloudy, "Cloudy", "64/57"),
+        WeatherDay("Fri", R.drawable.ic_sunny, "Sunny", "64/57"),
+        WeatherDay("Sat", R.drawable.ic_sunny, "Sunny", "64/57"),
+        WeatherDay("Sun", R.drawable.ic_sunny, "Sunny", "64/57")
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
